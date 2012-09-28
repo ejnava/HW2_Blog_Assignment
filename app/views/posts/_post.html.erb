@@ -1,6 +1,7 @@
-<!-- _post.html.erb -->
+<!-- _post.html.erb - partial -->
 
-<%= div_for @posts do %>
+<%= div_for @post do %>
   <h2><%= link_to_unless_current h(@post.title) %></h2>
   <%= simple_format h(@post.body) %>
+  Posted by: <%= simple_format h(@post.author) %>
 <% end %>
