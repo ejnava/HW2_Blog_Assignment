@@ -1,5 +1,5 @@
 Blog2::Application.routes.draw do
-  resources :comments
+#  resources :comments
 
   resources :posts do
     resources :comments
